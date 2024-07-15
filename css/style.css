@@ -1,0 +1,98 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+body {
+    background-color: #121212; /* Color de fondo más oscuro */
+}
+
+h1 {
+    color: #d1ac7c; /* Color del título */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
+}
+
+.card {
+    border: none; /* Sin bordes para un look más limpio */
+    transition: transform 0.2s; /* Animación suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.btn-custom {
+    background-color: #d1ac7c;
+    border: none;
+}
+
+.navbar {
+    border-bottom: 2px solid #ffffff;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+input[type="search"] {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+input[type="search"]::placeholder {
+    color: #b0b3b8;
+}
+
+#priceHeader {
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25d366;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(2);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.whatsapp-icon img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: pulse 3s infinite;
+}
